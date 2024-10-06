@@ -30,48 +30,35 @@ Dataset
 The dataset used for this project is sourced from Airbnb's publicly available listings for Chicago. It includes the following key columns:
 
 The Airbnb Chicago dataset contains various columns that provide valuable insights into listings and can be utilized for data visualization in Power BI. Here’s a breakdown of each column:
-1.	id:
-o	Description: Unique identifier for each listing.
-o	Use: Useful for referencing and filtering specific listings.
-2.	name:
-o	Description: Name of the listing.
-o	Use: Can be displayed in visualizations to provide context and detail about specific listings.
-3.	host_id:
-o	Description: Unique identifier for each host.
-o	Use: Helps in aggregating data at the host level and analyzing host performance.
-4.	host_name:
-o	Description: Name of the host.
-o	Use: Useful for visualizations to identify hosts and their listings.
-5.	neighbourhood:
-o	Description: Neighborhood in which the listing is located.
-o	Use: Key for geographical analysis, allowing visualization of listings by neighborhood and trends in different areas.
-6.	latitude:
-o	Description: Geographic latitude of the listing.
-o	Use: Essential for creating maps to visualize the geographic distribution of listings.
-7.	longitude:
-o	Description: Geographic longitude of the listing.
-o	Use: Works in conjunction with latitude for mapping purposes.
-8.	room_type:
-o	Description: Type of room being offered (e.g., Entire home/apt, Private room, Shared room).
-o	Use: Can be used to analyze market trends based on room types and visualize their distribution.
-9.	price:
-o	Description: Price per night for the listing.
-o	Use: Key metric for financial analysis; can be used to visualize average prices per neighborhood or room type.
-10.	minimum_nights:
-o	Description: Minimum number of nights a guest must stay.
-o	Use: Useful for analyzing host policies and their impact on bookings.
-11.	number_of_reviews:
-o	Description: Total number of reviews received by the listing.
-o	Use: Indicates listing popularity and can be visualized to show trends in guest feedback.
-12.	reviews_per_month:
-o	Description: Average number of reviews per month.
-o	Use: Useful for assessing listing activity and guest engagement over time.
-13.	calculated_host_listings_count:
-o	Description: Number of listings associated with a particular host.
-o	Use: Helpful in analyzing the market presence of hosts and their overall impact on the market.
-14.	availability_365:
-o	Description: Number of days the listing is available for booking in a year.
-o	Use: Useful for understanding host availability and potential revenue, as well as visualizing trends in availability across listings.
+**Key Attributes**:
+
+1. id: Unique identifier for each listing.
+
+2. name: The title or name of the listing.
+
+3. host_id: Unique identifier for the host of the property.
+
+4. host_name: Name of the host.
+
+5. neighbourhood_group: The broader area or group that the neighbourhood belongs to.
+
+6. neighbourhood: Specific neighbourhood where the property is located.
+
+7. latitude: Latitude coordinate of the property.
+
+8. longitude: Longitude coordinate of the property.
+
+9. room_type: Type of room (e.g., Private room, Entire home/apt, Shared room).
+
+10. price: Price of the listing per night.
+
+11. minimum_nights: Minimum number of nights required for booking.
+
+12. number_of_reviews: Total number of reviews received for the listing.
+
+13. reviews_per_month: Average number of reviews per month.
+
+14. availability_365: Number of days the listing is available for booking in a year.
 
 Price Distribution (Histogram): Showing the distribution of prices across all listings.
 Average Price by Neighborhood (Bar Chart): Displaying the average price of listings in various neighborhoods.
